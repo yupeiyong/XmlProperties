@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorAccent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--
+        gravity:控件内元素的对齐方式
+        layout_gravity:控件在父元素中的对齐方式
+        注意：
+            当 android:orientation="vertical" 时，
+                只有水平方向的设置才起作用，垂直方向的设置不起作用。
+                即：left，right，center_horizontal 是生效的。
+            当 android:orientation="horizontal" 时，
+                只有垂直方向的设置才起作用，水平方向的设置不起作用。
+                即：top，bottom，center_vertical 是生效的。
+        -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
+
